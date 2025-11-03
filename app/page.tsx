@@ -15,6 +15,8 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
+import { DialogTitle, DialogTrigger } from "@radix-ui/react-dialog";
 
 const Home = () => {
     return (
@@ -43,6 +45,19 @@ const Home = () => {
                             <Trash className="cursor-pointer"size={14}/>
                         </div>
                     </div>
+
+                    <Dialog>
+                        <DialogTrigger>Abrir</DialogTrigger>
+                        <DialogContent>
+                            <DialogHeader>
+                                <DialogTitle>Editar Tarefa</DialogTitle>
+                            </DialogHeader>
+                            <div className="flex gap-2">
+                                <Input placeholder="Editar Tarefa" />
+                                <Button>Editar</Button>
+                            </div>
+                        </DialogContent>
+                    </Dialog>
 
                 </div>
                 
