@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✅ Gerenciador de Tarefas
 
-## Getting Started
+Um gerenciador de tarefas moderno e intuitivo desenvolvido com **Next.js**, **React**, **TypeScript**, **PostgreSQL**, **Prisma ORM**, **Tailwind CSS** e **Shadcn UI**.  
+Permite criar, editar, listar e gerenciar tarefas de forma prática e eficiente.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js** — Framework React para renderização híbrida (SSR e SSG)
+- **React.js** — Biblioteca para construção de interfaces de usuário
+- **TypeScript** — Tipagem estática e melhor manutenção do código
+- **PostgreSQL** — Banco de dados relacional robusto e escalável
+- **Prisma ORM** — Abstração de banco de dados moderna e typesafe
+- **Tailwind CSS** — Estilização rápida e responsiva baseada em classes utilitárias
+- **Shadcn UI** — Componentes acessíveis e elegantes construídos sobre Radix UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Funcionalidades
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 📝 Criação, edição e exclusão de tarefas  
+- ✅ Marcar tarefas como concluídas  
+- 💾 Persistência dos dados no PostgreSQL  
+- 💡 Interface moderna e responsiva com Tailwind + Shadcn UI  
+- ⚙️ Configuração simples e escalável  
