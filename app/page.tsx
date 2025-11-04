@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { Plus, List, Check, Minus, SquarePen, Trash, ListChecks, Sigma} from 'lucide-react';
+import { Plus, List, Check, Minus,  Trash, ListChecks, Sigma} from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -15,8 +15,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
-import { DialogTitle, DialogTrigger } from "@radix-ui/react-dialog";
+import EditTasks from "@/components/edit-tasks";
 
 const Home = () => {
     return (
@@ -41,23 +40,12 @@ const Home = () => {
                         <div className="w-1 h-full bg-green-300"></div>
                         <p className="flex-1 px-2 text-sm">Tarefa 1</p>
                         <div className="flex items-center gap-2">
-                            <SquarePen className="cursor-pointer"size={14}/>
+
+                            <EditTasks />  
+
                             <Trash className="cursor-pointer"size={14}/>
                         </div>
                     </div>
-
-                    <Dialog>
-                        <DialogTrigger>Abrir</DialogTrigger>
-                        <DialogContent>
-                            <DialogHeader>
-                                <DialogTitle>Editar Tarefa</DialogTitle>
-                            </DialogHeader>
-                            <div className="flex gap-2">
-                                <Input placeholder="Editar Tarefa" />
-                                <Button>Editar</Button>
-                            </div>
-                        </DialogContent>
-                    </Dialog>
 
                 </div>
                 
