@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button"
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -16,8 +17,16 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import EditTasks from "@/components/edit-tasks";
+import { getTasks } from "@/actions/get-tasks-from-db";
+
 
 const Home = () => {
+
+    const handleGetTasks = async () => {
+        const tasks = await getTasks();
+        console.log("Tarefas do handleGetTasks:", tasks);
+    }
+
     return (
         <main className = "w-full h-screen bg-gray-100 flex justify-center items-center">
             <Card className= "w-lg p-4">
@@ -25,6 +34,8 @@ const Home = () => {
                     <Input placeholder="Adicionar Tarefa"/>
                     <Button variant = "default" className="cursor-pointer"><Plus/>Cadastar</Button>
                 </CardHeader>
+                
+                <Button onClick={handleGetTasks}>Buscar tarefas</Button>
                 
                 <CardContent>
                  <Separator className="mb-3"/>
